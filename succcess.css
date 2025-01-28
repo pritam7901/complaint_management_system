@@ -1,0 +1,32 @@
+body {
+    padding-top: 56px; /* Adjust based on navbar height */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 900px;
+}
+
+form .form-row {
+    margin-bottom: 1rem;
+}
+
+.card {
+    margin: auto;
+    padding: 20px;
+    max-width: 500px;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border: none;
+    }
+}

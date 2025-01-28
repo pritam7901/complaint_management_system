@@ -1,0 +1,83 @@
+@media (max-width: 1920px) {
+	body {
+    background: url('iter.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgba(0,0,0,0.7);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.glassmorphism-container {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+form {
+    margin-bottom: 0.0rem; /* Reduce as needed */
+}
+.form-group {
+    margin-bottom: 0.1rem; /* Adjust if needed */
+}
+
+
+.back-button {
+    position: fixed; /* Change from absolute to fixed */
+    top: 20px;
+    left: 20px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Ensure it's in front of other elements */
+}
+
+.back-button:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+h2 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: #3498db;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #2691d9;
+}
+
+.login-link a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+}
+/* Custom CSS */
+
+

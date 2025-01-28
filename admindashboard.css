@@ -1,0 +1,357 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f4f4f9;
+}
+
+.college-header {
+    background-color: #f4f4f9;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    gap: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+}
+
+.college-header img {
+    height: 50px;
+}
+
+.college-header h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.college-header h2 {
+    margin: 5px 0 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    overflow-y: auto;
+    margin-top: 82px; /* Aligns sidebar with college header */
+}
+
+.sidebar .admin-header {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #444;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar .admin-header i {
+    margin-right: 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px 20px;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar ul li:hover {
+    background-color: #555;
+}
+
+.main-content {
+    flex: 1;
+    margin-left: 200px;
+    padding: 20px;
+    background-color: #e8f4f8;
+    transition: margin-left 0.3s ease;
+}
+
+.header-box {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-box img {
+    width: 50px; /* Adjust size as needed */
+    margin-right: 15px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.header .left {
+    display: flex;
+    align-items: center;
+}
+
+.header .center {
+    flex: 1;
+    text-align: center;
+}
+
+.header h2 {
+    margin: 0;
+    color: white;
+    font-size: 25px;
+    font-weight: bold; /* Make "Welcome, Admin" bold */
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.header-buttons button {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #00aaff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-buttons .date {
+    font-size: 14px;
+    color: white;
+}
+
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.box {
+    flex: 1;
+    min-width: 300px;
+    height: 15vh;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.blue {
+    background-color: #f8f9fa;
+    color: #333;
+    font: bold;
+}
+
+.orange {
+    background-color: #f8f9fa;
+    color: #333;
+    font: bold;
+}
+
+.red {
+    background-color: #f8f9fa;
+    color: #333;
+    font: bold;
+}
+
+.teal {
+    background-color: #f8f9fa;
+    color: #333;
+    font: bold;
+}
+
+.green {
+    background-color: #f8f9fa;
+    color: #333;
+    font: bold;
+}
+
+.light-gray {
+    background-color: #f8f9fa;
+    color: #333;
+    font: bold;
+}
+
+.form-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form {
+    flex: 1;
+    min-width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form button {
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.form button:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+        margin-top: 0;
+    }
+
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .header h1 {
+        margin-bottom: 10px;
+    }
+
+    .dashboard {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-buttons button {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+
+    .header-buttons .date {
+        font-size: 12px;
+    }
+
+    .form-section {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .box {
+        font-size: 16px;
+        padding: 15px;
+    }
+}
+
+.small-button {
+    min-width: 120px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Added margin to keep the gap */
+}
+
+.small-button:hover {
+    background-color: #2980b9;
+}
+
+/* New classes for grievance summary */
+.grievance-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    background-color: #ffffff;
+    color: #333;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.summary-box:hover {
+    transform: scale(1.05);
+}

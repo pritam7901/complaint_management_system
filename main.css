@@ -1,0 +1,489 @@
+ /* General Navbar Styles */
+.navbar {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-brand img {
+    height: 45px; /* Adjust the height of the logo as needed */
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-weight: 600;
+    color: #333;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    color: #007bff; /* Change to your primary color */
+}
+
+/* Button Styles */
+.btn-brand {
+    background-color: #007bff; /* Change to your primary color */
+    color: #fff;
+    border-radius: 10px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.btn-brand:hover {
+    background-color: #0056b3; /* Darker shade for hover */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Navbar Toggler Styles (for mobile view) */
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('icon.png');
+}
+
+/* Sticky Navbar (optional) */
+.sticky-top {
+    z-index: 1030;
+    background-color: #fff; /* Ensures navbar background stays white when scrolling */
+}
+
+/* Responsive Styles */
+@media (max-width: 991px) {
+    .navbar-nav {
+        text-align: center;
+        background-color: #fff;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 16px;
+    }
+
+    .btn-brand {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+/* Hero Section Styles */
+ /* Hero Section Styles */
+#hero {
+    background: url('iter.jpg') no-repeat center center/cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+    z-index: 1;
+}
+
+#hero .container {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+#hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+#hero h5 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#hero .btn-brand {
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn-brand:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+#hero .btn-light {
+    padding: 12px 30px;
+    border-radius: 10px;
+    font-weight: 600;
+    color: #333;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#hero .btn-light:hover {
+    background-color: #e2e6ea;
+    color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero h5 {
+        font-size: 1.2rem;
+    }
+
+    #hero .btn-brand, 
+    #hero .btn-light {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+/* About Section Styling */
+#about {
+    padding: 40px 0;
+    background-color: #f9f9f9; /* Light gray background for contrast */
+}
+
+#about .section-title {
+    margin-bottom: 50px;
+}
+
+#about .section-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+#about .section-title .line {
+    width: 100px;
+    height: 4px;
+    background-color: #007bff; /* Primary blue color */
+    margin: 0 auto 20px;
+}
+
+#about .section-title p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#about img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #e0e0e0; /* Light gray placeholder color */
+}
+
+#about h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1rem;
+    color: #666;
+}
+
+#about .iconbox {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+#about .iconbox i {
+    color: #fff;
+}
+
+#about h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#about .d-flex {
+    margin-bottom: 20px;
+}
+
+#about .d-flex p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+}
+/* Section Title */
+.section-title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.section-title .line {
+    width: 80px;
+    height: 4px;
+    background-color: #007bff; /* Primary color for the line */
+    margin: 1rem auto;
+}
+
+/* Service Card */
+.service {
+    background-color: #ffffff; /* White background for service cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    padding: 2rem; /* Padding inside the card */
+    text-align: center; /* Center-align text and icon */
+}
+
+.service:hover {
+    transform: translateY(-10px); /* Lift effect */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+    background-color: #f8f9fa; /* Light grey background on hover */
+}
+
+/* Icon Box */
+.iconbox {
+    font-size: 3rem; /* Larger icon size */
+    color: #007bff; /* Primary color for icons */
+    margin-bottom: 1rem;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.service:hover .iconbox {
+    color: #0056b3; /* Darker color for icons on hover */
+}
+
+/* Heading */
+h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+/* Paragraph Text */
+p {
+    font-size: 1rem;
+    color: #6c757d; /* Secondary text color */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service {
+        padding: 2rem;
+    }
+
+    .iconbox {
+        font-size: 2.5rem; /* Smaller icon size on small screens */
+    }
+}
+/* Portfolio Section */
+#portfolio {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.portfolio-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.iconbox {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.portfolio-item h5 {
+    margin-top: 10px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.portfolio-item p {
+    font-size: 0.875rem;
+    color: #6c757d;
+}
+/* FAQ Section */
+#faq {
+    padding: 60px 0;
+}
+
+.faq-card {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-icon {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.faq-card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.faq-card p {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.faq-card:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.3s ease;
+}
+/* Team Member Section */
+#team {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.section-title h1 {
+    color: #333;
+}
+
+.section-title .line {
+    background-color: #007bff;
+    height: 4px;
+    width: 80px;
+    margin: 20px auto;
+}
+
+.team-member {
+    background-color: #343a40;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: #fff;
+}
+
+.image-zoom-wrapper {
+    overflow: hidden;
+    position: relative;
+}
+
+.image-zoom-wrapper img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-zoom:hover .image-zoom-wrapper img {
+    transform: scale(1.1);
+}
+
+.team-member-content {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.team-member-content h4 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.team-member-content p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+ /* Footer Styles */
+.footer-top {
+    padding: 40px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.footer-top .line {
+    width: 60px;
+    height: 2px;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+.footer-top h5 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-top ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-top ul li {
+    margin-bottom: 10px;
+}
+
+.footer-top ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-top ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    padding: 20px 0;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+.footer-bottom .col-auto p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+  

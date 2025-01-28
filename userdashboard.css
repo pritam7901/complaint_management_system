@@ -1,0 +1,125 @@
+/* Base styles */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar-brand span {
+    margin-left: 5px;
+    font-size: 2.0rem;
+}
+
+.navbar-nav .nav-item .nav-link {
+    font-size: 1rem;
+    margin-left: 15px;
+}
+
+h1.navbar-text {
+    font-size: 1.5rem;
+}
+/* Make the table responsive */
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Responsive table adjustments for smaller screens */
+@media (max-width: 767.98px) {
+    .table thead {
+        display: none;
+    }
+
+    .table, .table tbody, .table tr, .table td {
+        display: block;
+        width: 100%;
+    }
+
+    .table tr {
+        margin-bottom: 15px;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .table td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: bold;
+        text-align: left;
+    }
+}
+
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    padding-top: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.nav.flex-column .nav-link {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 10px;
+}
+
+.nav.flex-column .nav-link.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.2rem;
+}
+
+.form-inline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-inline .form-control, .form-inline .btn {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767.98px) {
+    .navbar-text {
+        font-size: 1.2rem;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .nav.flex-column .nav-link {
+        font-size: 1rem;
+    }
+
+    .form-inline {
+        justify-content: center;
+    }
+
+    .card-title {
+        font-size: 1rem;
+    }
+}
