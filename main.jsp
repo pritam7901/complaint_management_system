@@ -343,7 +343,7 @@
 
     <!-- TEAM -->
     <!-- TEAM -->
-<section id="team" class="section-padding">
+ <section id="team" class="section-padding">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center" data-aos="fade-down" data-aos-delay="150">
@@ -372,7 +372,7 @@
                         <img src="prineshrout2.jpg" alt="Team Member 2">
                     </div>
                     <div class="team-member-content">
-                        <h4 class="text-white">prinesh Rout</h4>
+                        <h4 class="text-white">Prinesh Rout</h4>
                         <p class="mb-0 text-white">Role</p>
                     </div>
                 </div>
@@ -380,10 +380,10 @@
             <div class="col-md-3" data-aos="fade-down" data-aos-delay="350">
                 <div class="team-member image-zoom">
                     <div class="image-zoom-wrapper">
-                        <img src="sunit.jpg" alt="Team Member 3">
+                        <img src="pritam.png" alt="Team Member 3" style="height:410px">
                     </div>
-                    <div class="team-member-content">
-                        <h4 class="text-white">Sunit kumar giri</h4>
+                    <div class="team-member-content" >
+                        <h4 class="text-white">Pritam Swain</h4>
                         <p class="mb-0 text-white">Role</p>
                     </div>
                 </div>
@@ -402,6 +402,7 @@
         </div>
     </div>
 </section>
+
     
     <!-- BLOG -->
    
